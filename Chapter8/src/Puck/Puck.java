@@ -10,7 +10,7 @@ Course: Computer Programming 30
  
 
 */
-package PuckP1;
+package Puck;
 
 public class Puck extends Disk 
 {

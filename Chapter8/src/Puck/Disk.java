@@ -1,4 +1,4 @@
-package PuckP1;
+package Puck;
 
 /**
  * Disk class.
