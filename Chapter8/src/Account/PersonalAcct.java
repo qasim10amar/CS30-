@@ -51,7 +51,14 @@ withdraw = input.next();
 if (Bala<100 && withdraw.equalsIgnoreCase("Y")) {
 System.out.print("Enter amount to withdraw: ");
 Wamo = input.nextDouble();
-Bala = Bala - 9;
+
+if (Wamo == 0 ) {
+	Cole.withdrawal(Wamo);
+}
+else {
+	Cole.withdrawal(Wamo+2);
+}
+
 } else if (Bala>= 100 && withdraw.equalsIgnoreCase("Y")) {
 System.out.print("Enter amount to withdraw: ");
 Wamo = input.nextDouble();
