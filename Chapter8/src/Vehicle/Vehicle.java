@@ -7,19 +7,20 @@ abstract class Vehicle {
 	private int Range;
 	private String Color;
 	private String Engine;
-	private boolean TV;
-	
+	private double NumOfSeats;
+	private double Seats;
 
 	/**
 	 * constructor
 	 * pre: none
 	 * post: A vehicle has been created.
 	 */
-	public Vehicle(int RA, String CO, String ENG, boolean TV) {
+	public Vehicle(int RA, String CO, String ENG, double NOS, double SE) {
 		Range = RA;
 		Color = CO;
 		Engine = ENG;
-		TV = TV;
+		NumOfSeats = NOS;
+		Seats = SE;
 	}
 	
 		
@@ -58,10 +59,13 @@ abstract class Vehicle {
 	 * pre: none
 	 * post: The cargo volume has been returned
 	 */
-	 public boolean TV() {
-	 	return(TV);
+	 public double NumOfSeats() {
+	 	return(NumOfSeats);
 	 }
-
+	 
+	 public double Seats() {
+		 	return(Seats);
+		 }
 
 	/**
 	 * Should return the appropriate name of the cargo area
@@ -70,7 +74,7 @@ abstract class Vehicle {
 	 * post: The name of the cargo container and its capacity 
 	 * has been returned
 	 */
-	abstract String cargoContainer();
+	abstract String seats();
 	
 	
 	/**
