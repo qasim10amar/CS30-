@@ -1,3 +1,16 @@
+/*
+
+Program: Staff.java          Last Date of this Revision: 
+
+Purpose: An application that takes in information about the job and outputs it
+
+Author: , 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package Account;
 
 import java.text.NumberFormat;

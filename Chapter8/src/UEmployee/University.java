@@ -1,10 +1,10 @@
 /*
 
-Program: UEmployee.java          Last Date of this Revision: 2-Oct-2020
+Program: Staff.java          Last Date of this Revision: 
 
-Purpose: An application that tests the class of University. Creates a profile for a person at the university
+Purpose: An application that takes in information about the job and outputs it
 
-Author: Hamza Amar, 
+Author: , 
 School: CHHS
 Course: Computer Programming 30
  
