@@ -7,20 +7,21 @@ abstract class Vehicle {
 	private int Range;
 	private String Color;
 	private String Engine;
-	private double NumOfSeats;
-	private double Seats;
+	private double Tires;
+	private int NumOfSeats;
 
 	/**
 	 * constructor
 	 * pre: none
 	 * post: A vehicle has been created.
 	 */
-	public Vehicle(int RA, String CO, String ENG, double NOS, double SE) {
+	public Vehicle(int RA, String CO, String ENG, int NOS, double TI) {
 		Range = RA;
 		Color = CO;
 		Engine = ENG;
+		Tires = TI;
 		NumOfSeats = NOS;
-		Seats = SE;
+	
 	}
 	
 		
@@ -59,12 +60,12 @@ abstract class Vehicle {
 	 * pre: none
 	 * post: The cargo volume has been returned
 	 */
-	 public double NumOfSeats() {
+	 public int NumOfSeats() {
 	 	return(NumOfSeats);
 	 }
 	 
-	 public double Seats() {
-		 	return(Seats);
+	 public double Tires() {
+		 	return(Tires);
 		 }
 
 	/**
