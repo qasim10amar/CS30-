@@ -1,8 +1,8 @@
 /*
 
-Program: Puck.java          Last Date of this Revision: 
+Program: Puck.java          Last Date of this Revision: 10-Mar-2022
 
-Purpose: An application that 
+Purpose: Modify the puck class to implement the comparable interface.
 
 Author: Qasim Amar, 
 School: CHHS

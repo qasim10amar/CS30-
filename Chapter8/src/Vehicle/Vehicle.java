@@ -4,22 +4,20 @@ package Vehicle;
  * Vehicle class.
  */
 abstract class Vehicle {
-	private int Range;
-	private String Color;
-	private String Engine;
-	private double Tires;
-	private int NumOfSeats;
+	public int Range;
+	public String Color;
+	public String Engine;
+	public int NumOfSeats;
 
 	/**
 	 * constructor
 	 * pre: none
 	 * post: A vehicle has been created.
 	 */
-	public Vehicle(int RA, String CO, String ENG, int NOS, double TI) {
+	public Vehicle(int RA, String CO, String ENG, int NOS) {
 		Range = RA;
 		Color = CO;
 		Engine = ENG;
-		Tires = TI;
 		NumOfSeats = NOS;
 	
 	}
@@ -64,9 +62,10 @@ abstract class Vehicle {
 	 	return(NumOfSeats);
 	 }
 	 
-	 public double Tires() {
-		 	return(Tires);
-		 }
+	 public String toString()
+	    {
+	        return("It has a range of " +  Range + " with an a" + Engine + ". ");
+	    }
 
 	/**
 	 * Should return the appropriate name of the cargo area
@@ -75,7 +74,7 @@ abstract class Vehicle {
 	 * post: The name of the cargo container and its capacity 
 	 * has been returned
 	 */
-	abstract String seats();
+	abstract String space();
 	
 	
 	/**

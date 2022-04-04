@@ -1,10 +1,10 @@
 /*
 
-Program: Staff.java          Last Date of this Revision: 
+Program: UEmployee.java          Last Date of this Revision: 18-Mar-2022
 
-Purpose: An application that takes in information about the job and outputs it
+Purpose: An application that takes in information about the user name and salary
 
-Author: , 
+Author: Qasim Amar, 
 School: CHHS
 Course: Computer Programming 30
  
@@ -16,11 +16,11 @@ package UEmployee;
 
 public class UEmployee 
 {
-    //Creating public varaibles
+    //Creating public variables
     String employee;
     Double salary;
     
-    //Having constructer take name, salary and thier choice
+    //Having constructor take name, salary and their choice
     public UEmployee(String name, Double sal, String choice) 
     {
         employee = name;
@@ -42,6 +42,3 @@ public class UEmployee
     
 
 }
-/* Screen Dump:
-
-*/

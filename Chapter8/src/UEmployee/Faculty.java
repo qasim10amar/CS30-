@@ -1,10 +1,10 @@
 /*
 
-Program: Staff.java          Last Date of this Revision: 
+Program: Faculty.java          Last Date of this Revision: 18-Mar-2022
 
-Purpose: An application that takes in information about the job and outputs it
+Purpose: An application that takes in information about the department and outputs it
 
-Author: , 
+Author: Qasim Amar, 
 School: CHHS
 Course: Computer Programming 30
  
@@ -22,7 +22,7 @@ public class Faculty extends UEmployee
     //Taking in name, salary and the department he choose
     public Faculty(String person, Double salary, String department) 
         {            
-            //Assinging department to public variable
+            //Assigning department to public variable
             super(person, salary, department);
             ward = department;
 	}
@@ -33,12 +33,9 @@ public class Faculty extends UEmployee
         }
             
         
-    //Outputting the string as a whole sentance
+    //Outputting the string as a whole sentence
     public String toString() 
         {
             return(super.getEmployee() + " makes " + money.format(super.getSalary()) + " and works in the " + getDepartment() + " department");
         }
 }
-/* Screen Dump:
-
-*/

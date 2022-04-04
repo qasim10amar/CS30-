@@ -1,10 +1,10 @@
 /*
 
-Program: Staff.java          Last Date of this Revision: 
+Program: Staff.java          Last Date of this Revision: 18-Mar-2022
 
 Purpose: An application that takes in information about the job and outputs it
 
-Author: , 
+Author: Qasim Amar, 
 School: CHHS
 Course: Computer Programming 30
  
@@ -20,12 +20,12 @@ public class Staff extends UEmployee
 {
     String job;
     NumberFormat money = NumberFormat.getCurrencyInstance();
-    //Taking in name, salary and the job he choose
+    	//Taking in name, salary and the job he choose
     	public Staff(String person, Double salary, String title) 
         {        
             //Sending values to parent classes
             super(person, salary, title);
-            //Assinging job to a public varaible
+            //Assigning job to a public variable
             job = title;
 	}
         
@@ -35,11 +35,8 @@ public class Staff extends UEmployee
             return(job);
         }
             
-        //creating a sentance for the class
+        //Creating a sentence for the class
         public String toString() {
 	 	return(super.getEmployee() + " makes " + money.format(super.getSalary()) + " and works as a " + Job());
 	}
 }
-/* Screen Dump:
-
-*/
