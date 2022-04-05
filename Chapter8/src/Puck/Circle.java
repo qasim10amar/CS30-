@@ -49,7 +49,6 @@ public class Circle {
 	 	return(circleArea);
 	}
 
-	
 	/** 
 	 * Returns the radius of the circle.
 	 * pre: none

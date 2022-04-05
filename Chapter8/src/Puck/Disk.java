@@ -17,7 +17,6 @@ public class Disk extends Circle {
 		thickness = t;
 	}
 
-
 	/** 
 	 * Changes the thickness of the disc.
 	 * pre: none

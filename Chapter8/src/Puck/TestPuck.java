@@ -41,6 +41,7 @@ public class TestPuck {
 		System.out.println(Hockey2);
 	}
 }
+
 /* Screen Dump:
 
 Puck weight: 5.5
