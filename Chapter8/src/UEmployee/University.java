@@ -8,7 +8,6 @@ Author: Qasim Amar,
 School: CHHS
 Course: Computer Programming 30
  
-
 */
 
 package UEmployee;

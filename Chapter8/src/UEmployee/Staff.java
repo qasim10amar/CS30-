@@ -1,5 +1,4 @@
 /*
-
 Program: Staff.java          Last Date of this Revision: 18-Mar-2022
 
 Purpose: An application that takes in information about the job and outputs it
@@ -20,6 +19,7 @@ public class Staff extends UEmployee
 {
     String job;
     NumberFormat money = NumberFormat.getCurrencyInstance();
+    
     	//Taking in name, salary and the job he choose
     	public Staff(String person, Double salary, String title) 
         {        

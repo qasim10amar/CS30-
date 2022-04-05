@@ -19,6 +19,7 @@ public class Faculty extends UEmployee
 {
     String ward;
     NumberFormat money = NumberFormat.getCurrencyInstance();
+    
     //Taking in name, salary and the department he choose
     public Faculty(String person, Double salary, String department) 
         {            
@@ -26,13 +27,13 @@ public class Faculty extends UEmployee
             super(person, salary, department);
             ward = department;
 	}
+    
     //Creating class to send department name
     public String getDepartment()
         {
             return(ward);
         }
             
-        
     //Outputting the string as a whole sentence
     public String toString() 
         {
