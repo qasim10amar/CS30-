@@ -6,7 +6,6 @@ public class Account {
 	private double balance;
 	private Customer cust;
 		
-	
 	/**
 	 * constructor
 	 * pre: none
