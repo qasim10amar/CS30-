@@ -1,19 +1,24 @@
+/*
+
+Program: Vehicle.java          Last Date of this Revision: 28-Mar-2022
+
+Purpose: A class that is abstract which defines the general details and actions of a vehicle
+
+Author: Qasim Amar, 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package Vehicle;
 
-/**
- * Vehicle class.
- */
 abstract class Vehicle {
 	public int Range;
 	public String Color;
 	public String Engine;
 	public int NumOfSeats;
 
-	/**
-	 * constructor
-	 * pre: none
-	 * post: A vehicle has been created.
-	 */
+	//A constructor that defines the attributes of a vehicle
 	public Vehicle(int RA, String CO, String ENG, int NOS) {
 		Range = RA;
 		Color = CO;
@@ -22,65 +27,36 @@ abstract class Vehicle {
 	
 	}
 	
-		
-	/**
-	 * Returns the fEHwy
-	 * pre: none
-	 * post: The highway fuel economy has been returned
-	 */
+	 //Returns the range
 	 public int getRange() {
 	 	return(Range);
 	 }
 
-
-	/**
-	 * Returns the fECity
-	 * pre: none
-	 * post: The city fuel economy has been returned
-	 */
+     //Returns the color
 	 public String Color() {
 	 	return(Color);
 	 }
 
-
-	/**
-	 * Returns the seating capacity
-	 * pre: none
-	 * post: The seating capacity has been returned
-	 */
+	 //Returns the engine
 	 public String Engine() {
 	 	return(Engine);
 	 }
 
-
-	/**
-	 * Returns the cargo volume
-	 * pre: none
-	 * post: The cargo volume has been returned
-	 */
+	 //Returns the number of seats
 	 public int NumOfSeats() {
 	 	return(NumOfSeats);
 	 }
 	 
+	 //Returns the attributes of the vehicle
 	 public String toString()
 	    {
 	        return("It has a range of " +  Range + " with an a" + Engine + ". ");
 	    }
 
-	/**
-	 * Should return the appropriate name of the cargo area
-	 * and the capacity.
-	 * pre: none
-	 * post: The name of the cargo container and its capacity 
-	 * has been returned
-	 */
+	 //Returns the cargo space
 	abstract String space();
 	
-	
-	/**
-	 * Should return a description of the car's typical use
-	 * pre: none
-	 * post: A description of the car's typical use has been returned.
-	 */
+	//Returns the description of the vehicle
 	abstract String description();
+	
 }

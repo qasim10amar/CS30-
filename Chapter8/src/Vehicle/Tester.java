@@ -1,6 +1,6 @@
 /*
 
-Program: Car.java          Last Date of this Revision: 31-Mar-2022
+Program: Tester.java          Last Date of this Revision: 31-Mar-2022
 
 Purpose: An application which displays the three Vehicle classes.
 
@@ -17,13 +17,24 @@ public class Tester {
 
 	public static void main(String[] args) 
     {
+		//Defines the attributes of a car
 		Car car1 = new Car(500, "white", "V4", 5, 16);
+		
+		//Defines the attributes of a minivan
 		Minivan van1 = new Minivan(700, "black", "V6", 7, 18);
+		
+		//Defines the attributes of a truck
 		Truck truck1 = new Truck(600, "red", "V8", 2, 20);
+		
+		//Outputs the description of the car
 		System.out.println(car1.description());
 		System.out.println(car1.space());
+		
+		//Outputs the description of the minivan
 		System.out.println("\n"+ van1.description());
 		System.out.println(van1.space());
+		
+		//Outputs the description of the truck
 		System.out.println("\n"+ truck1.description());
 		System.out.println(truck1.space());
 	}
