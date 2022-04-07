@@ -1,0 +1,30 @@
+CRT Chapter 8								 Qasim Amar
+
+1. An is-a relation is an inheritance of classes between each other, while a has-a just has a
+specific part that the parent doesn't have.
+
+2. The method stop() and go() only
+
+3. Abstract is never given any values just a name, while when you are overriding a method
+it means replacing it with something new. When overriding you replace the original with
+the new statement. 
+
+4. An abstract class has to be inherited to implement its methods while an interface cannot
+be inherited, but it can still implement its methods.
+
+6a. It’s a abstract method
+
+6b. Name of the interface
+
+6c. Because abstract methods have to be inherited to have functionality
+
+6d. The methods that are available are doThis(), doThat(), and doNow().
+
+6e. The method doThis() in the Roo object overwrites the Bo objects doThis() method
+
+6f. It sends the 1 to the parent class to create the objects properties
+
+6g. The accessor methods in Bo are accessible by Roo as it extends to it which allows a Roo object to call the doThis() method.
+
+6h. By using super the method in Roo can call the doThis() method.
+
