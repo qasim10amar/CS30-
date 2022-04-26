@@ -20,10 +20,10 @@ public class StatsP1 {
 			
 		
 			double avgScore;
-			double totalScores = 0;
-			int numScores = 0;
-			String name;
-			String score;
+			double totalScore = 0;
+			int numScore = 0;
+			String Name;
+			String Score;
 			NumberFormat percent = NumberFormat.getPercentInstance();
 			File dataFile= new File("test1.dat");
 
@@ -35,18 +35,18 @@ public class StatsP1 {
 			
 			in = new FileReader(dataFile);
 			readFile = new BufferedReader(in);
-			name=readFile.readLine();
-			System.out.println(name);
+			Name=readFile.readLine();
+			System.out.println(Name);
 			   
-			while ((score = readFile.readLine()) != null) {
-			totalScores+= Double.parseDouble(score);
-			numScores+=1;
-			System.out.println(score);
+			while ((Score = readFile.readLine()) != null) {
+			totalScore+= Double.parseDouble(Score);
+			numScore+=1;
+			System.out.println(Score);
 			   
 			}
 			
-		    avgScore = totalScores/numScores;
-		    System.out.print("\n" + name + " Average = " + percent.format(avgScore/100));
+		    avgScore = totalScore/numScore;
+		    System.out.print("\n" + Name + " Average = " + percent.format(avgScore/100));
 
 			readFile.close();
 			in.close();
