@@ -18,10 +18,9 @@ public class StatsP1 {
 		
 		public static void main(String[] args) {
 			
-		
-			double avgScore;
-			double totalScore = 0;
-			int numScore = 0;
+			int NumScore = 0;
+			double Avg;
+			double TotScore = 0;
 			String Name;
 			String Score;
 			NumberFormat percent = NumberFormat.getPercentInstance();
@@ -39,14 +38,14 @@ public class StatsP1 {
 			System.out.println(Name);
 			   
 			while ((Score = readFile.readLine()) != null) {
-			totalScore+= Double.parseDouble(Score);
-			numScore+=1;
+			TotScore+= Double.parseDouble(Score);
+			NumScore+=1;
 			System.out.println(Score);
 			   
 			}
 			
-		    avgScore = totalScore/numScore;
-		    System.out.print("\n" + Name + " Average = " + percent.format(avgScore/100));
+		    Avg = TotScore/NumScore;
+		    System.out.print("\n" + Name + " Average = " + percent.format(Avg/100));
 
 			readFile.close();
 			in.close();
