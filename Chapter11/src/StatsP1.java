@@ -21,6 +21,8 @@ public class StatsP1 {
 			int NumScore = 0;
 			double Avg;
 			double TotScore = 0;
+			double lowest = 100; 
+			double highest = 0;
 			String Name;
 			String Score;
 			NumberFormat percent = NumberFormat.getPercentInstance();
@@ -38,6 +40,14 @@ public class StatsP1 {
 			System.out.println(Name);
 			   
 			while ((Score = readFile.readLine()) != null) {
+			Double Test = Double.parseDouble(Score);
+			if (Test < lowest) {
+				lowest = Test;
+			}
+			if (Test > highest) {
+				highest = Test;
+			}
+			
 			TotScore+= Double.parseDouble(Score);
 			NumScore+=1;
 			System.out.println(Score);
@@ -45,8 +55,8 @@ public class StatsP1 {
 			}
 			
 		    Avg = TotScore/NumScore;
-		    System.out.print("\n" + Name + " Average = " + percent.format(Avg/100));
-
+		    System.out.print( "\n" + "Name: " + Name + "\n" + "Average = " + percent.format(Avg/100)
+		    + "\n" + "Lowest Score :" + percent.format(lowest/100) + "\n" + "Highest Score: " + percent.format(highest/100));
 			readFile.close();
 			in.close();
 			
@@ -78,6 +88,9 @@ Qasim Amar
 78
 93
 
-Qasim Amar Average = 74%
+Name: Qasim Amar
+Average = 74%
+Lowest Score :43%
+Highest Score: 100%
  
 */
