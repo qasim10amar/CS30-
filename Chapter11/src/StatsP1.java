@@ -2,7 +2,7 @@
 
 Program: StatsP1.java          Last Date of this Revision: Apr 11, 2022
 
-Purpose: 
+Purpose: Create a Stats application that reads names and scores from a data file names test1.dat and then display each name and score and average, lowest, and highest score.
 
 Author: Qasim Amar, 
 School: CHHS

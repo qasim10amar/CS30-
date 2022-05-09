@@ -1,8 +1,22 @@
+/*
+
+Program: StuRoster.java          Last Date of this Revision: Apr 14, 2022
+
+Purpose: Create a Roster application that prompts user for the name of the file to store student names and then prompts the user for the number of students in the class, the first and last name and then stores and displays the roster.
+
+Author: Qasim Amar,
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 package Roster;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,8 +31,11 @@ public class StuRoster{
 		BufferedWriter writeFile;
 		String fileName;
 		File dataFile;
-
-
+		BufferedReader readFile;
+		FileReader in;
+		String StuName;
+		int z = 1;
+		
 		System.out.println("Enter the name of the file: ");
 		fileName=input.next();
 		dataFile = new File(fileName);
@@ -42,6 +59,17 @@ public class StuRoster{
 		writeFile.close();
 		out.close();
 		
+		in = new FileReader(dataFile);
+	    readFile = new BufferedReader(in);
+		while ((StuName = readFile.readLine()) != null) {
+		   
+		    System.out.println("\n" + "Student " + z + ": " + StuName);
+		    z++;
+		}
+		readFile.close();
+		in.close();
+		
+		
 	    }
 		catch (FileNotFoundException e) {
 
@@ -58,3 +86,36 @@ public class StuRoster{
 		}
 	 
 }
+
+/* Screen Dump
+
+Enter the name of the file: 
+Roster
+How many names would you like to enter? : 
+5
+Enter first and last name of student 1 :
+Qasim Amar
+Enter first and last name of student 2 :
+John Jo
+Enter first and last name of student 3 :
+Mike Smith
+Enter first and last name of student 4 :
+David Pitt
+Enter first and last name of student 5 :
+Smith Mason
+
+Student 1: Qasim Amar
+
+Student 2: John Jo
+
+Student 3: Mike Smith
+
+Student 4: David Pitt
+
+Student 5: Smith Mason
+
+ 
+*/
+
+
+

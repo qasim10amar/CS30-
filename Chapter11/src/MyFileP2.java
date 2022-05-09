@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 Program: MyFileP2.java          Last Date of this Revision: Apr 7, 2022
 
-Purpose: 
+Purpose: Create a MyFile application that creates a file named zzz.txt  and then display a message indicating the file has been created and prompts user to delete or keep the file.
 
 Author: Qasim Amar, 
 School: CHHS

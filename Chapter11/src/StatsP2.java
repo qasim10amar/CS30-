@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 Program: StatsP2.java          Last Date of this Revision: Apr 14, 2022
 
-Purpose:
+Purpose: Modify the Stats application to allow the user to enter the names and grades of the students.
 
 Author: Qasim Amar,
 School: CHHS

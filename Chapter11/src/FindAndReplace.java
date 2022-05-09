@@ -1,3 +1,16 @@
+/*
+
+Program: FindAndReplace.java          Last Date of this Revision: Apr 14, 2022
+
+Purpose: Create a FindAndReplace Application that prompts user for file name, a search word or phrase, and a replacement word or phrase.
+
+Author: Qasim Amar,
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -13,7 +26,7 @@ import Roster.StuName;
 public class FindAndReplace {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner input = new Scanner(System.in);	
 		String fileName;
 		boolean Running = true;
@@ -76,4 +89,15 @@ public class FindAndReplace {
 	}
 
 }
+
+/* Screen Dump
+
+Enter File Name: 
+Test.txt
+Enter word/phrase to search: 
+spider
+Enter word/phrase to replace with: 
+ant
+
+*/
 

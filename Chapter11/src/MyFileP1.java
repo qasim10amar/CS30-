@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 Program: MyFileP1.java          Last Date of this Revision: Apr 7, 2022
 
-Purpose: 
+Purpose: Create a MyFile application that prompts the user for the names of a file and then displays a message that indicates whether the file exists or not.
 
 Author: Qasim Amar, 
 School: CHHS
