@@ -32,7 +32,7 @@ public class MyFileP1 {
 	
 		if (textFile.exists()) 
 		{
-			System.out.println("File already exists.");
+			System.out.println("File exists.");
 		} 
 		
 		else 
@@ -52,7 +52,7 @@ public class MyFileP1 {
 
 Enter File Name: 
 C:\Users\54150001\Desktop\code.txt
-File already exists.
+File exists.
 Enter File Name: 
 C:\Users\54150001\Desktop\hello
 File does not exist.

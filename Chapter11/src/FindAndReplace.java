@@ -2,7 +2,7 @@
 
 Program: FindAndReplace.java          Last Date of this Revision: Apr 14, 2022
 
-Purpose: Create a FindAndReplace Application that prompts user for file name, a search word or phrase, and a replacement word or phrase.
+Purpose: Create a FindAndReplace Application that prompts user for file name, a search word or phrase and a replacement word or phrase.
 
 Author: Qasim Amar,
 School: CHHS
