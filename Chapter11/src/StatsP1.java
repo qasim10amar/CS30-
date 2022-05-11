@@ -25,7 +25,11 @@ public class StatsP1 {
 			double highest = 0;
 			String Name;
 			String Score;
+			
+			//Times number by 100 and adds percent sign
 			NumberFormat percent = NumberFormat.getPercentInstance();
+			
+			//Creates new file named test1.dat
 			File dataFile= new File("test1.dat");
 
 
@@ -34,26 +38,41 @@ public class StatsP1 {
 
 			try {
 			
+			
 			in = new FileReader(dataFile);
 			readFile = new BufferedReader(in);
+			
+			//Writes the name to the file
 			Name=readFile.readLine();
 			System.out.println(Name);
 			   
+			//Reads file until nothing is left to read
 			while ((Score = readFile.readLine()) != null) {
+				
+			
+			//Calculates absolute lowest score
 			Double Test = Double.parseDouble(Score);
 			if (Test < lowest) {
 				lowest = Test;
 			}
+			
+			//Calculates absolute highest score
 			if (Test > highest) {
 				highest = Test;
 			}
 			
+			//Holds the scores
 			TotScore+= Double.parseDouble(Score);
+			
+			//Counts number of scores entered
 			NumScore+=1;
+			
+			//Displays the scores entered
 			System.out.println(Score);
 			   
 			}
 			
+			//Displays the name and the lowest, highest, and average score
 		    Avg = TotScore/NumScore;
 		    System.out.print( "\n" + "Name: " + Name + "\n" + "Average = " + percent.format(Avg/100)
 		    + "\n" + "Lowest Score :" + percent.format(lowest/100) + "\n" + "Highest Score: " + percent.format(highest/100));

@@ -40,27 +40,37 @@ String fileName;
 File dataFile;
 NumberFormat percent = NumberFormat.getPercentInstance();
 
-
+//User enters name of the file object which is created
 System.out.println("Enter the name of the file: ");
 fileName=input.next();
 dataFile = new File(fileName);
 input.nextLine();
 
 try {
+	
 out = new FileWriter(dataFile);
 writeFile = new BufferedWriter(out);
 
+//Prompts user to enter name
 System.out.println("Enter your Name : ");
 Name=input.nextLine();
+
+//Writes the name in the file
 writeFile.write(Name);
+
 writeFile.newLine();
 
+//Asks user for number of test scores to enter
 System.out.println("How many Scores would you Like to Enter? : ");
 NumScore = input.nextInt();
+
+//Creates a array that holds each individual mark
 Grades = new double[NumScore];
 
+//Asks the user to enter test scores
 System.out.println("Enter " + NumScore + " class Score: ");
 
+//Writes all test scores into file and the array
 for( int i =0; i<NumScore; i++) {
 Score=input.nextDouble();
 TotScore += Score;
@@ -69,11 +79,12 @@ writeFile.write(String.valueOf(Score));
 writeFile.newLine();
 }
 
+//Calculates average score
 Avg = TotScore/NumScore;
 
+   //Calculates lowest and highest score
    highest =Grades[0];
    lowest=Grades[0] ;
- 
    for (int i = 1; i < Grades.length; i++)
    {
    if (Grades[i] > highest)
@@ -82,9 +93,11 @@ Avg = TotScore/NumScore;
    lowest = Grades[i];
    }
  
+   //Displays the name and lowest, highest, and average score
    System.out.print( "\n" + "Name: " + Name + "\n" + "Average = " + percent.format(Avg/100)
    + "\n" + "Lowest Score :" + percent.format(lowest/100) + "\n" + "Highest Score: " + percent.format(highest/100));
  
+   //Stops writing in the file
    writeFile.close();
    out.close();
    }

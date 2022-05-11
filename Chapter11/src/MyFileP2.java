@@ -21,27 +21,41 @@ public class MyFileP2 {
 	{
 			Scanner input = new Scanner(System.in);
 			
-			
+			//Initializes a string named F
 			String F;
 			
 			try {
+				
+				 //Creates a file object named zzz.txt
 			     File fileName = new File("zzz.txt");
 			     
+			      //Creates new file
 			      fileName.createNewFile();
+			      
+			      //Displays to user that the file has been created
 			      System.out.println("File created: " + fileName.getName());
 			     
-			     
+			     //Asks user if they want to keep the file
 			     System.out.println("Do you want to keep: " + fileName.getName() + " y for (Yes) n for (No)");
+			     
+			      //String F that holds the name of the file
 			     F = input.next();
 			     
+			     //Saves file if user chooses to keep the file
 			     if (F.equalsIgnoreCase("y")) {
 			     System.out.println( fileName.getName() + " Has Been Saved");
-			     } else if (F.equalsIgnoreCase("n"))  {
+			     
+			     } 
+			     
+			     //Deletes file if user chooses to delete it
+			     else if (F.equalsIgnoreCase("n"))  {
 			     fileName.delete();
 			     System.out.println( fileName.getName() + " Has Been Deleted");
 			     }
 			     
-			   } catch (IOException e) {
+			   }
+				
+			     catch (IOException e) {
 			     System.out.println("An error occurred.");
 			     System.err.println("IOException " + e.getMessage());
 			     

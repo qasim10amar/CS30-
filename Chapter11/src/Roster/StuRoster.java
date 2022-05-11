@@ -36,11 +36,13 @@ public class StuRoster{
 		String StuName;
 		int z = 1;
 		
+		//Asks the enter file name and file is created using that name
 		System.out.println("Enter the name of the file: ");
 		fileName=input.next();
 		dataFile = new File(fileName);
 		input.nextLine();
 		
+		//Asks user for number of students and stores it
 		System.out.println("How many names would you like to enter? : ");
 		NameAmount = input.nextInt();
 		input.nextLine();
@@ -48,6 +50,8 @@ public class StuRoster{
 	try {
 		out = new FileWriter(dataFile);
 		writeFile = new BufferedWriter(out);
+		
+		//Writes the first and last name of the students to the file
 		for (int i = 0; i < NameAmount; i++) {
 			System.out.println("Enter first and last name of student " + (i+1) + " :");
 			String Name = input.nextLine();
@@ -56,16 +60,22 @@ public class StuRoster{
 			writeFile.newLine();
 		}
 		
+		//Stops writing in the file
 		writeFile.close();
 		out.close();
 		
 		in = new FileReader(dataFile);
 	    readFile = new BufferedReader(in);
+	    
+	    //Reads the file until nothing is left to read
 		while ((StuName = readFile.readLine()) != null) {
 		   
+			//Displays the students number and their first and last name
 		    System.out.println("\n" + "Student " + z + ": " + StuName);
 		    z++;
 		}
+		
+		//Stops reading the file
 		readFile.close();
 		in.close();
 		
