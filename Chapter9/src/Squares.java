@@ -31,3 +31,13 @@ public class Squares {
 
 }
 }
+
+/* Screen Dump
+
+0
+1
+4
+9
+16
+
+*/
