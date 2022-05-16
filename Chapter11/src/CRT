@@ -1,0 +1,21 @@
+1. No, since memory is part of the RAM of a computer and is not stored.
+
+2. import java.io.File;
+import java.io.IOException;
+
+3. It needs two \\ instead of just one \
+
+4. A and B
+try
+{
+textFile.createNewFile();
+output.setText("File has been created.");
+}
+catch (IOException e)
+{
+output.setText("File could not be created.");
+System.err.println("IOException: " + e.getMessage());
+}
+
+5. A and B
+The name of the stream used to display error messages is the err stream and are displayed on the screen

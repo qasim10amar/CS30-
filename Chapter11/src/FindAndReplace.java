@@ -27,31 +27,42 @@ public class FindAndReplace {
 
 	public static void main(String[] args) {
 		
+		//Intilize varaible
 		Scanner input = new Scanner(System.in);	
 		String fileName;
 		boolean Running = true;
 		do {
 			
+			//Inputting File name
 			System.out.println("Enter File Name: ");
 			fileName = input.nextLine();
 			File textFile = new File(fileName);
 		
+			//Checks to see if file name exist on computer
 			if (textFile.exists()) 
 			{
+				//Asks user to input word to replace
 				System.out.println("Enter word/phrase to search: ");
 				String searchWord = input.nextLine();
 				System.out.println("Enter word/phrase to replace with: ");
 				String replacementWord = input.nextLine();
 				
+				//Initialize variables that will check each line of the file and replace with the new lines
 				String line, newLine;
 				try {
 				
+			    //Initialize file reader	
 				FileReader in = new FileReader(textFile);
 				BufferedReader readFile = new BufferedReader(in);
 				StringBuffer inputBuffer = new StringBuffer();
 				
+				//Goes through each line in file till the end
 				while ((line = readFile.readLine()) != null) {
+					
+					//Creates new line with the replaced word
 					newLine = line.replace(searchWord, replacementWord);
+					
+					//Adds to input buffer
 					inputBuffer.append(newLine);
 		            inputBuffer.append('\n');
 				}
@@ -59,8 +70,10 @@ public class FindAndReplace {
 				readFile.close();
 				in.close();
 				
-				// write the new string with the replaced line OVER the same file
+				//Write the new string with the replaced line over the same file
 		        FileOutputStream fileOut = new FileOutputStream(fileName);
+		        
+		        //Overwrites content in file with input buffer
 		        fileOut.write(inputBuffer.toString().getBytes());
 		        fileOut.close();
 				}
@@ -76,14 +89,18 @@ public class FindAndReplace {
 					
 					
 					}
+				//Exists loop when word is replaced
 				Running = false;
 			} 
 			
 			else 
 			{
+				//Tells user file does not exist if it doesn't
 				System.out.println("File does not exist.");
 			}
 		} 
+		
+		//Keeps running loop when file doesn't exist
 		while(Running);
 		
 	}
