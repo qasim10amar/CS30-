@@ -6,30 +6,32 @@ import java.lang.Math;
 public class FindName {
 
 	public static void main(String[] args) {
-		final int MAX = 20;
-		int[] numArray = new int[MAX];
+		
 		Scanner input = new Scanner(System.in);
-		int num, location;
+		System.out.println("How many names do you want to enter: ");
+		int numNames = input.nextInt();
+		input.nextLine();
+		String Name;
+		int location;
+		String names[] = new String[numNames];
 
-		/* fill array with random numbers */
-		for (int i = 0; i < numArray.length; i++) {
-			numArray[i] = (int)((MAX + 1) * Math.random());
+		for(int i=0 ; i<names.length; i++) {
+		System.out.println("Enter name: " + (i));
+		names[i] = input.nextLine();
 		}
 
-		/* prompt user for a number to search for */
-		System.out.print("Enter a number between 0 and " + MAX + ": ");
-		num = input.nextInt();
 
-		/* Search for number and notify user of num location */
-		location = SearchName.linear(numArray, num);
+		System.out.println("Which name do you want to find: ");
+		Name=input.nextLine();
+
+		location = SearchName.linear(names, Name);
+
 		if (location == -1) {
-			System.out.println("Sorry, number not found in array.");
+		System.out.println("Sorry, n not found in array.");
 		} else {
-			System.out.println("First occurrence is element " + location);
+		System.out.println("Occurrence is element " + location);
 		}
-	}
 
-
-	}
-
+		}
+		}
 
