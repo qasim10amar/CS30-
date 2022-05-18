@@ -1,3 +1,16 @@
+/*
+
+Program: FindName.java          Last Date of this Revision: May 14, 2022
+
+Purpose: 
+
+Author: Qasim Amar, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package Name;
 
 import java.util.Scanner;
@@ -16,7 +29,7 @@ public class FindName {
 		String names[] = new String[numNames];
 
 		for(int i=0 ; i<names.length; i++) {
-		System.out.println("Enter name: " + (i));
+		System.out.println("Enter name: " + (i+1));
 		names[i] = input.nextLine();
 		}
 
@@ -34,4 +47,20 @@ public class FindName {
 
 		}
 		}
+
+/* Screen Dump
+
+How many names do you want to enter: 
+3
+Enter name: 1
+Mike Smith
+Enter name: 2
+John Jo
+Enter name: 3
+Qasim Amar
+Which name do you want to find: 
+John Jo
+Occurrence is element 2
+
+*/
 

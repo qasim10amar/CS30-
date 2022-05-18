@@ -1,0 +1,39 @@
+1. 2
+
+2. String[] quantities = new String[20];
+
+3. Double[] Heights = {1.65, 2.15, 4.19};
+
+4. for (int value : grades)
+{
+System.out.println(value);
+}
+
+5. a) ArrayList<Integer> grades = new ArrayList<Integer>();
+int num = 0;
+for (int i = 0; i < 4; i++)
+{
+grades.add(0, num);
+num++;
+}
+Output: [3, 2, 1, 0]
+
+b) ArrayList<Integer> grades = new ArrayList<Integer>();
+int num = 0;
+for (int i = 0; i < 4; i++)
+{
+grades.add(0, num);
+num++;
+}
+//removes second index
+grades.remove(2);
+Output: [3, 2, 0]
+
+6. When you pass the array to the method you are taking all the information contained in
+the array while when you just pass an element, you're only taking a value from the array
+and inputting it into the method. Also an array is passed as a reference data type while a single element passes the data stored not a reference to the data location.
+
+7. An offset array can be used for instances like recording the output of a dice because it
+allows the user to count from 1-6 instead of 0-5.
+
+8. “i”
