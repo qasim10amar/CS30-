@@ -1,6 +1,6 @@
 1. 2
 
-2. String[] quantities = new String[20];
+2. int[] quantities = new int[20];
 
 3. Double[] Heights = {1.65, 2.15, 4.19};
 
