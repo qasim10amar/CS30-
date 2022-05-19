@@ -2,7 +2,7 @@
 
 Program: HighestGrade.java          Last Date of this Revision: May 16, 2022
 
-Purpose: 
+Purpose: Prompts user for 5 grades between 0-100 and stores grades to ArrayList then displays the highest grade with a appropriate message.
 
 Author: Qasim Amar, 
 School: CHHS
@@ -18,21 +18,21 @@ public class HighestGrade {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		
+		//Initializes variables
 		double Grades[] = new double[5];
 		double Grade;
-
 		double greatest=0;
 
 		NumberFormat percent = NumberFormat.getPercentInstance();
 
+		//Asks the user to enter 5 grades between 0-100
 		System.out.println("Enter 5 Grades between 0-100: " + "\n");
-
-
 		for(int i=0; i<Grades.length; i++) {
 		System.out.println("Enter Grade: " + (i+1));
-
-
 		Grades[i] = input.nextInt();
+		
+		//If user enter grade higher then 100 the user is prompted to enter another grade
 		if (Grades[i]>100) {
 		System.out.println("Please only enter Grades between 0-100" + "\n");
 		i--;
@@ -40,6 +40,7 @@ public class HighestGrade {
 		}
 		}
 
+		//Finds the highest grade
 		for(int i=0; i<Grades.length; i++) {
 		Grade =Grades[i];
 
@@ -48,6 +49,7 @@ public class HighestGrade {
 		}
 		}
 
+		//Displays the highest grade with a appropriate message
 		System.out.println("The Highest Grade is: " + percent.format(greatest/100));
 
 		if (greatest<= 50 && greatest >=0) {
