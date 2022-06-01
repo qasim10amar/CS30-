@@ -1,5 +1,16 @@
-	//Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
-	import com.phidget22.*;
+/*
+
+Program: BlinkLED.java          Last Date of this Revision: May 22, 2022
+Purpose: Modify your code so the LED stays on for 2 seconds.
+
+Author: Qasim Amar
+School: CHHS
+Course: CS30
+
+*/
+
+//Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
+import com.phidget22.*;
 	
 public class BlinkLED {
 
