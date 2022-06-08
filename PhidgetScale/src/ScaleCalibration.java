@@ -1,5 +1,7 @@
 /*
 Program: ScaleCalibration.java        Last Date of this Revision: June 6, 2022
+Purpose: Find slope value
+
 Author: Qasim Amar 
 School: CHHS
 Course: Computer Programming 30

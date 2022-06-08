@@ -1,5 +1,8 @@
 /*
 Program: Lesson1P3.java     Last Date of this Revision:  June 4, 2022
+Purpose:Convert the scale output to grams instead of kg. (Hint: 1kg = 1000g)
+		Convert the scale output to pounds instead of kg. (Hint: 1kg = 2.205lbs)
+
 Author: Qasim Amar
 School: CHHS
 Course: Computer Programming 30

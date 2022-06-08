@@ -1,5 +1,7 @@
 /*
 Program: Lesson1.java     Last Date of this Revision:  June 3, 2022
+Purpose: Modify your program so the offset is automatically calculated when the program boots. It should be calculated at the beginning of your program, and average 64 samples. While averaging, it should print "Calculating Offset" to the user.
+
 Author: Qasim Amar 
 School: CHHS
 Course: Computer Programming 30

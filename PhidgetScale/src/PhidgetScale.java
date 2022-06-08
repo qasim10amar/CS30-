@@ -1,3 +1,13 @@
+/*
+Program: PhidgetScale.java        Last Date of this Revision: June 6, 2022
+Purpose: Find Scale Offset
+
+Author: Qasim Amar 
+School: CHHS
+Course: Computer Programming 30
+ 
+*/
+
 //Add Phidgets Library
 import com.phidget22.*;
 
