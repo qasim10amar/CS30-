@@ -1,3 +1,14 @@
+/*
+
+Program: Obstacles.java          Last Date of this Revision: Jun 8, 2022
+Purpose: Learn how to avoid obstacles using your Sonar Phidget.
+
+Author: Qasim Amar
+School: CHHS
+Course: CS30
+
+*/
+
 //Add Phidgets Library
 import com.phidget22.*;
 
